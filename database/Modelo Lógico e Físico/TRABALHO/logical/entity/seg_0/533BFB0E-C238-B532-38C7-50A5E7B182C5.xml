@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="533BFB0E-C238-B532-38C7-50A5E7B182C5" name="USERS">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>2BF31938-56E7-FAC5-9E3F-F4D1D7314634</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="0B75C06E-92B7-D84E-88FF-8B40BC6A0BB4">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>C383ACEE-1448-18B6-AA8A-4E23F75086CB</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID USER" id="FAD7768C-23F2-A26D-69CB-F786E3E09074">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>1ABE4778-D35B-392B-1D5F-4E9550724B88</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USERNAME" id="D9492525-F4B9-E9C4-5E1E-51197B644928">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>0B0377BD-2E2C-C200-B3E2-3D09CDED2A43</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACCOUNT STATUS" id="506383DB-7B30-5229-FFB4-602D7E3DF6E1">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>F841AB58-EDFD-0FCC-B3DA-4ED19DA7A111</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEFAULT TS" id="2A6249EF-5389-4521-6A89-FDD64EBA72F8">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>74D07294-3E01-AAFE-2DD8-DA514A2A19A3</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TEMPORARY TS" id="2AA0F141-96CE-7B73-3378-AC2859F1F6FC">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>86281D83-3464-7E2E-535F-10C2B2CD6886</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LAST LOGIN" id="48C0B133-E7A8-B62F-F56F-122D347EF064">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>087C52D7-412A-D415-4D4F-6FE00F30D4E2</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIMESTAMP" id="9762CF18-C808-C314-1479-FA1469693DE8">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>72FC80E5-D881-C87B-56DC-D16868F8AD3F</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DB ID" id="C3627A8A-6FDC-2705-412A-7BA9E42299F0">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>D4E597DE-906D-5C7B-E788-776E66A591EC</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<referedAttribute>B8281617-298F-5EF1-B4B3-8B03126AA3DB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DC9B82EE-CD15-148C-AA96-9085E5CE3D7B" name="Users PK">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>D3564E76-8127-AB15-1A67-86DD48AD2852</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0B75C06E-92B7-D84E-88FF-8B40BC6A0BB4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

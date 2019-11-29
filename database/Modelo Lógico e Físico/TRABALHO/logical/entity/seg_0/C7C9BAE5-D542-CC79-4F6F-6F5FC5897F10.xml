@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C7C9BAE5-D542-CC79-4F6F-6F5FC5897F10" name="DB">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>85014A37-29C6-F084-E665-9D7EE15C8D8F</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="B8281617-298F-5EF1-B4B3-8B03126AA3DB">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>070B0036-D384-84CC-DC63-838D23A474A0</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAME" id="2B17E0E8-0ED4-AB06-7A2E-A57F2606198A">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>4E0D1D10-C9A8-60C4-D1BD-764407C20D77</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PLATFORM" id="96FCCA9B-496B-7203-CD68-DE403F90C0D1">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>4119D75A-C7DA-DB31-21FC-A74D8B721457</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DB VERSION" id="51C0B7CD-26EA-52C7-6B59-443DA594B351">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>C89C3041-DE69-8C42-CE43-09013502FC11</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIMESTAMP" id="B1BDDE08-E62B-70B7-9DD2-3CC27049D04F">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[COLOCADO ATÉ AO MILISSEGUNDO]]></commentInRDBMS>
+<generatorID>802C668C-53CD-5534-6191-EE0F69B4FB16</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="409BD228-E964-FF63-8CA3-7F826761ABD6" name="DB PK">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>710501F1-966A-7F8D-5AB7-3444D2D82026</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B8281617-298F-5EF1-B4B3-8B03126AA3DB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

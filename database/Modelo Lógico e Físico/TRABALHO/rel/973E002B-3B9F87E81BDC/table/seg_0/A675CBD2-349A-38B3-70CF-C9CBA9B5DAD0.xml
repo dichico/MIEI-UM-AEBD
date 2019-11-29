@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A675CBD2-349A-38B3-70CF-C9CBA9B5DAD0" schemaObject="48F2135C-5498-A4BC-900E-3B9348737496" name="TABLESPACE">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:09:56 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A0CE3FF0-8EE4-79DE-6CB7-73B401527EA8">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:15:04 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>tablespaces_sq</autoIncrementSequenceName>
+<autoIncrementTriggerName>tablespaces_id_trg</autoIncrementTriggerName>
+</Column>
+<Column name="NAME" id="587C1030-6AD7-81BC-FA88-2E7010A9B457">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:15:04 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BLOCK_SIZE" id="BE1FA022-0FFC-DE83-3616-A6E0EAD4FFAC">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:15:04 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_SIZE" id="7DF640C6-C4C4-DFF2-A193-C3F0D1A513C8">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:15:04 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="4BABAF61-0F47-5FE4-6946-0A1CBCBA266A">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:15:04 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTENTS" id="F668F379-E7E7-C77B-24B5-25689E530F6A">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:15:04 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIMESTAMP" id="CEEBC703-114A-D76A-0EB7-66530EF92D1A">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:15:04 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DB_ID" id="2A6509FB-4CC2-3A30-C249-8C39D9F57FEE">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:15:04 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA34BC92-4DFD-DEA7-925F-9E4DDA5042AE" referredColumn="070B0036-D384-84CC-DC63-838D23A474A0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB4629DD-6109-C539-573A-BDD1C2D334DD" name="TABLESPACE_PK">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:15:04 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0CE3FF0-8EE4-79DE-6CB7-73B401527EA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03623EBF-333C-F650-AFA4-7B25F9F7B7C7" name="TABLESPACE_DB_FK">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:15:17 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A6509FB-4CC2-3A30-C249-8C39D9F57FEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

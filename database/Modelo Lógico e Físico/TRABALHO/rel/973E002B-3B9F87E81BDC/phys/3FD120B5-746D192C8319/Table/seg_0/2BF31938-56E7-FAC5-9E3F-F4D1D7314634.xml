@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="USERS" directorySegmentName="seg_0" id="2BF31938-56E7-FAC5-9E3F-F4D1D7314634">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<schemaObject>48F2135C-5498-A4BC-900E-3B9348737496</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="LAST_LOGIN" id="087C52D7-412A-D415-4D4F-6FE00F30D4E2">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERNAME" id="0B0377BD-2E2C-C200-B3E2-3D09CDED2A43">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_USER" id="1ABE4778-D35B-392B-1D5F-4E9550724B88">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIMESTAMP" id="72FC80E5-D881-C87B-56DC-D16868F8AD3F">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEFAULT_TS" id="74D07294-3E01-AAFE-2DD8-DA514A2A19A3">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TEMPORARY_TS" id="86281D83-3464-7E2E-535F-10C2B2CD6886">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="C383ACEE-1448-18B6-AA8A-4E23F75086CB">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DB_ID" id="C7A067B1-DAB7-8A70-D87D-FBF24FF1983B">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCOUNT_STATUS" id="F841AB58-EDFD-0FCC-B3DA-4ED19DA7A111">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Users_DB_FK" id="570B24F3-6963-2B9F-70FB-14A2A4FE4E44">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Users_PK" id="D3564E76-8127-AB15-1A67-86DD48AD2852">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

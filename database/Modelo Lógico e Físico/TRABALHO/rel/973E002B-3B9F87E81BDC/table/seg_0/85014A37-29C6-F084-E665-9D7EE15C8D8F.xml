@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="85014A37-29C6-F084-E665-9D7EE15C8D8F" schemaObject="48F2135C-5498-A4BC-900E-3B9348737496" name="DB">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 13:44:03 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="070B0036-D384-84CC-DC63-838D23A474A0">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 13:49:28 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>db_sq</autoIncrementSequenceName>
+<autoIncrementTriggerName>db_id_trg</autoIncrementTriggerName>
+</Column>
+<Column name="NAME" id="4E0D1D10-C9A8-60C4-D1BD-764407C20D77">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 13:49:28 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLATFORM" id="4119D75A-C7DA-DB31-21FC-A74D8B721457">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 13:49:28 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DB_VERSION" id="C89C3041-DE69-8C42-CE43-09013502FC11">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 13:49:28 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIMESTAMP" id="802C668C-53CD-5534-6191-EE0F69B4FB16">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 13:49:28 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="710501F1-966A-7F8D-5AB7-3444D2D82026" name="DB_PK">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 13:49:28 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="070B0036-D384-84CC-DC63-838D23A474A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

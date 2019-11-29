@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DB" directorySegmentName="seg_0" id="85014A37-29C6-F084-E665-9D7EE15C8D8F">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<schemaObject>48F2135C-5498-A4BC-900E-3B9348737496</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="070B0036-D384-84CC-DC63-838D23A474A0">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PLATFORM" id="4119D75A-C7DA-DB31-21FC-A74D8B721457">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="4E0D1D10-C9A8-60C4-D1BD-764407C20D77">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIMESTAMP" id="802C668C-53CD-5534-6191-EE0F69B4FB16">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DB_VERSION" id="C89C3041-DE69-8C42-CE43-09013502FC11">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DB_PK" id="710501F1-966A-7F8D-5AB7-3444D2D82026">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:37:19 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

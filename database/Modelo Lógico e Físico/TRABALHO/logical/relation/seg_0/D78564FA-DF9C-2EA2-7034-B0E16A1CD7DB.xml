@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TABLESPACE_DB_FK" directorySegmentName="seg_0" id="D78564FA-DF9C-2EA2-7034-B0E16A1CD7DB">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>CA34BC92-4DFD-DEA7-925F-9E4DDA5042AE</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<sourcePk>409BD228-E964-FF63-8CA3-7F826761ABD6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C7C9BAE5-D542-CC79-4F6F-6F5FC5897F10</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>434C2C36-A9A0-DCA7-B243-DD67244A935D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

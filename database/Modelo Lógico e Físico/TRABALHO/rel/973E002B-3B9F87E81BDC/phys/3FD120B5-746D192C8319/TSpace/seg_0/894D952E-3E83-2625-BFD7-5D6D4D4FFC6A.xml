@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="GRUPO7" directorySegmentName="seg_0" id="894D952E-3E83-2625-BFD7-5D6D4D4FFC6A">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:48:06 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+<dataFiles>
+<DataFile class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataFileOraclev10g" name="GRUPO7" id="EFC78266-9F54-8548-BAE2-61E9700F5449">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:48:29 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<autoextend>ON</autoextend>
+<fileName>GRUPO7</fileName>
+<measureUnit>M</measureUnit>
+<size>200</size>
+</DataFile>
+</dataFiles>
+</TableSpaceOraclev10g>

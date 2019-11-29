@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9A4AD3CC-BBFE-127B-B9AB-4DAAE319CDFA" name="DB STATUS">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>1061B580-B274-5ACC-8A7D-CBF7BD7AA4E8</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="E06131B0-313D-16C0-984C-DDC94159CE87">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>F768E7BF-4CA3-8049-A566-6EF769D7A86C</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TOTAL SIZE" id="95223AC3-C35D-2675-2CCD-A2E576032A8F">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>4714E507-5559-31F6-2441-499B3D79E3EE</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FREE SIZE" id="B944020B-3924-7576-276A-6F7463DC1B21">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>FF30314A-BCFD-FA49-0E3D-49B7230BC7B9</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USED SIZE" id="BA09D7E3-91CE-6847-7E44-10F22F8E660B">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>05A91C03-3D55-2F55-3296-46A4DE569A1C</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CPU COUNT" id="342F08D8-E034-A3C1-5FDF-97AAA36D1C7E">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>F55ADCF6-F85B-9588-3707-40172EB7038B</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CPU CORE COUNT" id="C173ECA0-FC6C-4BD2-26AB-F2DD88ADBA62">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>61120CB5-3D2A-1985-3DB9-589636C78146</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CPU SOCKET COUNT" id="B62FCAF2-100F-80FD-7E81-D12DC7EE71A9">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>FDF6D941-45CD-A4F9-4BE3-165961602988</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NUMBER SESSIONS" id="B2352D2F-539C-0CEA-A753-F18E584A314E">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>0D0FA8AD-4E0E-0378-5641-024279BBA123</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIMESTAMP" id="747F8820-8D9D-D533-1C38-18236417CE34">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>1ED38811-1BE4-B7E6-A147-4C94403A8652</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DB ID" id="4C9CC474-D71F-14A9-A16A-1C548E01DA8D">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>509ACBCA-15F6-C847-5CDF-72DDC2F1FB4E</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<referedAttribute>B8281617-298F-5EF1-B4B3-8B03126AA3DB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B763C21D-EC8E-C17A-2058-DC5514479AAF" name="DB STATUS PK">
+<createdBy>cocos</createdBy>
+<createdTime>2019-11-29 14:33:55 UTC</createdTime>
+<generatorID>6BB48A48-6487-A509-3D0D-CFADA2C93E69</generatorID>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<engineerTo>
+<item key="973E002B-88B1-E7F0-7A70-3B9F87E81BDC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E06131B0-313D-16C0-984C-DDC94159CE87</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
