@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DATAFILE" directorySegmentName="seg_0" id="D5ED93DA-1DCA-B726-B86F-183C0890ACC5">
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DATAFILE" directorySegmentName="seg_0" id="D5ED93DA-1DCA-B726-B86F-183C0890ACC5">
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:37:19 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
@@ -44,6 +44,7 @@
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:37:19 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
 </ColumnProxy>
 <ColumnProxy name="STATUS" id="ED2D5C58-85A4-03BD-6D01-36E98FE33D96">
 <createdBy>cocos</createdBy>
@@ -66,4 +67,4 @@
 <indexSort>SORTED</indexSort>
 </PrimaryKey>
 </primaryKeys>
-</TableProxyOraclev11g>
+</TableProxyOraclev12c>

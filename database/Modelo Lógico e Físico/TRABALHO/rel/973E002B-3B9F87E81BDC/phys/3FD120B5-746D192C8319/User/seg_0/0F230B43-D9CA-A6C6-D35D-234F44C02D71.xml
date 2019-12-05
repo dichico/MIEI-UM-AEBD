@@ -5,7 +5,21 @@
 <ownerDesignName>TRABALHO</ownerDesignName>
 <schemaObject>48F2135C-5498-A4BC-900E-3B9348737496</schemaObject>
 <defTableSpace>894D952E-3E83-2625-BFD7-5D6D4D4FFC6A</defTableSpace>
-<identifier>05077DDBDFFCFB5FD0AB254D60AC4C20AE</identifier>
+<identifier>05B1C1679546D6320C22585ADEB93D30DE</identifier>
 <privileges>CREATE SESSION, DELETE ANY TABLE, INSERT ANY TABLE, SELECT ANY TABLE, UPDATE ANY TABLE</privileges>
 <temptableSpace>F413D193-F6A2-FCF7-3A86-D3AEB97CC96F</temptableSpace>
+<quotaItems>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem_1" id="7CFE65A8-4E85-D84F-8D16-4529E9FC2F2B">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-05 15:01:30 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<tableSpace>894D952E-3E83-2625-BFD7-5D6D4D4FFC6A</tableSpace>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem_1" id="4981C5C1-ECA3-0980-02CF-EA5E1D5F067F">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-05 15:01:32 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<tableSpace>894D952E-3E83-2625-BFD7-5D6D4D4FFC6A</tableSpace>
+</QuotaItem>
+</quotaItems>
 </UserOraclev10g>

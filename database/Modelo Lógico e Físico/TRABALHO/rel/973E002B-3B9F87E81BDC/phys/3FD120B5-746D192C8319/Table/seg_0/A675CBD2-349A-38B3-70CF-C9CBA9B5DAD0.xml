@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TABLESPACE" directorySegmentName="seg_0" id="A675CBD2-349A-38B3-70CF-C9CBA9B5DAD0">
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TABLESPACE" directorySegmentName="seg_0" id="A675CBD2-349A-38B3-70CF-C9CBA9B5DAD0">
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:37:19 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
@@ -44,6 +44,7 @@
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:37:19 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
 </ColumnProxy>
 <ColumnProxy name="CONTENTS" id="F668F379-E7E7-C77B-24B5-25689E530F6A">
 <createdBy>cocos</createdBy>
@@ -66,4 +67,4 @@
 <indexSort>SORTED</indexSort>
 </PrimaryKey>
 </primaryKeys>
-</TableProxyOraclev11g>
+</TableProxyOraclev12c>

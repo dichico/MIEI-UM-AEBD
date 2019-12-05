@@ -99,6 +99,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT015</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
