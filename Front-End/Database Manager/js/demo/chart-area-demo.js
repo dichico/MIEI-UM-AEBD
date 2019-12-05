@@ -2,12 +2,30 @@
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
 
+var x = new Array();
+var y = new Array();
+
+$(document).ready(function(){
+  var test = 'http://localhost:8080/ords/grupo7/db_status/?q={"$orderby":{"id":"ASC"}}'
+  $.getJSON(test, function (json) {
+    // DEBUG
+    // console.log("JSON returnado pela BD")
+    // console.dir(json)
+    console.log("JSON apenas com a lista de objetos")
+    console.dir(json.items)
+
+    for(i=0; i<json.items.length;i++) {
+    x.push(json.items[i].id);
+    y.push(json.items[i].free_size)
+
+    }
+    
 // Area Chart Example
 var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: [1,2],
+    labels: x,
     datasets: [{
       label: "Free Size",
       lineTension: 0.3,
@@ -21,7 +39,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [500,400],
+      data: y,
     }],
   },
   options: {
@@ -86,4 +104,6 @@ var myLineChart = new Chart(ctx, {
       }
     }
   }
+})
+  });
 });
