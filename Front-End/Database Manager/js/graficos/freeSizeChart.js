@@ -2,12 +2,27 @@
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
 
-// Area Chart Example
-var ctx = document.getElementById("myAreaChart");
-var myLineChart = new Chart(ctx, {
+
+
+$(document).ready(function(){
+  
+  var x = Array()
+  var y = Array()
+
+  var test = 'http://localhost:8080/ords/grupo7/db_status/?q={"$orderby":{"id":"ASC"}}'
+  $.getJSON(test, function (json) {
+    
+    for(i=0; i<json.items.length; i++){
+      x.push(json.items[i].id)
+      y.push(json.items[i].free_size)
+    }
+
+  // Area Chart Example
+var chart = document.getElementById("freeSizeChart");
+var freeSizeChart = new Chart(chart, {
   type: 'line',
   data: {
-    labels: [1,2],
+    labels: x,
     datasets: [{
       label: "Free Size",
       lineTension: 0.3,
@@ -21,7 +36,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [500,400],
+      data: y,
     }],
   },
   options: {
@@ -50,7 +65,8 @@ var myLineChart = new Chart(ctx, {
       yAxes: [{
         ticks: {
           maxTicksLimit: 5,
-          padding: 10
+          padding: 10,
+          beginAtZero: true
         },
         gridLines: {
           color: "rgb(234, 236, 244)",
@@ -86,4 +102,6 @@ var myLineChart = new Chart(ctx, {
       }
     }
   }
+});
+});
 });
