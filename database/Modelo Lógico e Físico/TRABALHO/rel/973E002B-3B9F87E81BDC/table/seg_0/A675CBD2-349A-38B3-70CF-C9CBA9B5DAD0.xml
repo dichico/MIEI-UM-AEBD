@@ -3,7 +3,7 @@
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:09:56 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
-<ordsAlias>table_5</ordsAlias>
+<ordsEnable>true</ordsEnable>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
