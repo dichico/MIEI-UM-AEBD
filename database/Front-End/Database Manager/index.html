@@ -179,7 +179,7 @@
 
           <!-- Content Row -->
           <div class="row">
-
+            <script>includeHTML();</script>
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card border-left-primary shadow h-100 py-2">
@@ -187,7 +187,10 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Número de sessões</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">4</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800"> 
+                          <h3 id="DB_session" class="w3-center"></h3>
+
+                      </div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-male fa-2x text-gray-300"></i>
@@ -476,10 +479,26 @@
     <i class="fas fa-angle-up"></i>
   </a>
 
-  
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var test = 'http://localhost:8080/ords/grupo7/db_status/?q={"$orderby":{"id":"ASC"}}'
+      $.getJSON(test, function (json) {
+        // DEBUG
+        // console.log("JSON returnado pela BD")
+        // console.dir(json)
+        console.log("JSON apenas com a lista de objetos")
+        console.dir(json.items)
+
+        // LOAD text
+        var length = json.items.length-1
+        $("#DB_session").append(json.items[length].number_sessions);
+      });
+    });
+  </script>
 
 
 
+  <script src="include.js"></script>
 
 
   <!-- Bootstrap core JavaScript-->
@@ -502,3 +521,7 @@
 </body>
 
 </html>
+
+                        
+                            
+                    
