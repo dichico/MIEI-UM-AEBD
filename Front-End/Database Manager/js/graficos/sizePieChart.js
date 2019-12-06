@@ -13,10 +13,9 @@ $(document).ready(function(){
   $.getJSON(test, function (json) {
     
     item = [json.items.length-1]
-    for(i=0; i<item; i++){
-      x.push(json.items[i].free_size)
-      y.push(json.items[i].used_size)
-    }
+      x.push(json.items[item].free_size)
+      y.push(json.items[item].used_size)
+
 // Pie Chart Example
 var ctx = document.getElementById("sizePieChart");
 var myPieChart = new Chart(ctx, {
