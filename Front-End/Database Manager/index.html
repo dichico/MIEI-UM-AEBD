@@ -33,7 +33,7 @@
 
   <!-- Scripts a chamar os gráficos a fazer -->
   <script src="js/graficos/freeSizeChart.js"></script>
-  <script src="js/graficos/chart-pie-demo.js"></script>
+  <script src="js/graficos/sizePieChart.js"></script>
 
 
 </head>
@@ -283,22 +283,19 @@
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Teste</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Espaço</h6>
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
                   <div class="chart-pie pt-4 pb-2">
-                    <canvas id="myPieChart"></canvas>
+                    <canvas id="sizePieChart"></canvas>
                   </div>
                   <div class="mt-4 text-center small">
                     <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Teste 1
+                      <i class="fas fa-circle text-success"></i> Espaço Livre
                     </span>
                     <span class="mr-2">
-                      <i class="fas fa-circle text-success"></i> Teste 2
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Teste 3
+                      <i class="fas fa-circle text-danger"></i> Espaço Ocupado
                     </span>
                   </div>
                 </div>

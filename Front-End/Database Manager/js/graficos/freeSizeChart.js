@@ -8,13 +8,16 @@ $(document).ready(function(){
   
   var x = Array()
   var y = Array()
+  var tse = Array()
 
   var test = 'http://localhost:8080/ords/grupo7/db_status/?q={"$orderby":{"id":"ASC"}}'
   $.getJSON(test, function (json) {
     
     for(i=0; i<json.items.length; i++){
-      x.push(json.items[i].id)
+      x.push(json.items[i].timestamp)
       y.push(json.items[i].free_size)
+      var ts = new Date(json.items[i].timestamp)
+      tse.push(ts.toLocaleTimeString())
     }
 
   // Area Chart Example
@@ -22,7 +25,7 @@ $(document).ready(function(){
   var freeSizeChart = new Chart(chart, {
     type: 'line',
     data: {
-      labels: x,
+      labels: tse,
       datasets: [{
         label: "Free Size",
         lineTension: 0.3,
