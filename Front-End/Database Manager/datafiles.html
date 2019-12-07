@@ -32,11 +32,11 @@
   <script src="js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  <script src="vendor/chart.js/Chart.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="js/graficos/userTable.js"></script>
+  <script src="js/graficos/datafileTable.js"></script>
+
 
 </head>
 
@@ -57,7 +57,7 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item ">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Página Principal</span></a>
@@ -89,7 +89,7 @@
             <span>Tablespaces</span></a>
         </li>
         <!-- Nav Item - Charts -->
-      <li class="nav-item">
+      <li class="nav-item active">
           <a class="nav-link" href="datafiles.html">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Datafiles</span></a>
@@ -105,7 +105,7 @@
       </div>
 
       <!-- Nav Item - Charts -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="users.html">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Utilizadores</span></a>
@@ -128,27 +128,30 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800" style="margin-top:50px">Utilizadores</h1>
+            <h1 class="h3 mb-0 text-gray-800" style="margin-top:50px">DataFiles</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">
               <i class="fas fa-sync-alt fa-sm text-white-50"></i> Recarregar a página</a>
           </div>
 
+        
+
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-danger">Tabela dos utilizadores da DB</h6>
+              <h6 class="m-0 font-weight-bold text-danger">Tabela dos datafiles da DB</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 
-                <table class="table table-bordered" id="usertable" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="datafileTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>ID_USER</th>
-                      <th>USERNAME</th>
-                      <th>ACCOUNT_STATUS</th>
-                      <th>DEFAULT_TS</th>
-                      <th>TEMPORARY_TS</th>
+                      <th>ID_DATAFILE</th>
+                      <th>NAME</th>
+                      <th>AUTO_EXTENSIBLE</th>
+                      <th>STATUS</th>
+                      <th>MAX_BYTES</th>
+                      <th>BYTES</th>
                       <th>LAST_LOGIN</th>
                     </tr>
                   </thead>

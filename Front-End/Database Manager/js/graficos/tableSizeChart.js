@@ -8,24 +8,24 @@ $(document).ready(function(){
   var y = Array()
   var tse = Array()
 
-  var test = 'http://localhost:8080/ords/grupo7/db_status/?q={"$orderby":{"id":"ASC"}}'
+  var test = 'http://localhost:8080/ords/grupo7/tablespace/?q={"$orderby":{"id":"ASC"}}'
   $.getJSON(test, function (json) {
     
     for(i=0; i<json.items.length; i++){
       x.push(json.items[i].timestamp)
-      y.push(json.items[i].free_size)
+      y.push(json.items[i].block_size)
       var ts = new Date(json.items[i].timestamp)
       tse.push(ts.toLocaleTimeString())
     }
 
   // Area Chart Example
-  var chart = document.getElementById("freeSizeChart");
-  var freeSizeChart = new Chart(chart, {
+  var chart = document.getElementById("tableSizeChart");
+  var tableSizeChart = new Chart(chart, {
     type: 'line',
     data: {
       labels: tse,
       datasets: [{
-        label: "Free Size",
+        label: "Tabel Size",
         lineTension: 0.3,
         backgroundColor: "rgba(78, 115, 223, 0.05)",
         borderColor: "rgba(78, 115, 223, 1)",
