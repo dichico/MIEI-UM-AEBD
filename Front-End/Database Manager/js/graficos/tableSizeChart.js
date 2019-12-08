@@ -25,7 +25,7 @@ $(document).ready(function(){
     data: {
       labels: tse,
       datasets: [{
-        label: "Tabel Size",
+        label: "Table Size",
         lineTension: 0.3,
         backgroundColor: "rgba(78, 115, 223, 0.05)",
         borderColor: "rgba(78, 115, 223, 1)",
