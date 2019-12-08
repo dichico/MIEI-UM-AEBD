@@ -1,4 +1,5 @@
 // Function para adicionar as linhas da tabela
+// Function para adicionar as linhas da tabela
 function appendToUserTable (ID_USER, USERNAME, ACCOUNT_STATUS, DEFAULT_TS, TEMPORARY_TS, LAST_LOGIN) {
   
   var table = document.getElementById('usertable');
@@ -16,6 +17,7 @@ function appendToUserTable (ID_USER, USERNAME, ACCOUNT_STATUS, DEFAULT_TS, TEMPO
 }
 
 $(document).ready(function() {
+
   var data = 'http://localhost:8080/ords/grupo7/users/?q={"$orderby":{"id":"ASC"}}'
   $.getJSON(data, function (json) {
         
@@ -24,9 +26,8 @@ $(document).ready(function() {
       var ts = new Date(item.last_login)
       appendToUserTable(item.id_user, item.username, item.account_status, item.default_ts, item.temporary_ts, ts.toLocaleTimeString())
     }
-
   
   })
 
-  $('#usertable').DataTable();
+  $('#userTable').DataTable();
 })
