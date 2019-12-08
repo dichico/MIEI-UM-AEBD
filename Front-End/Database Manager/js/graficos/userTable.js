@@ -16,14 +16,18 @@ function appendToUserTable (ID_USER, USERNAME, ACCOUNT_STATUS, DEFAULT_TS, TEMPO
 }
 
 $(document).ready(function() {
+  var tse = Array();
 
   var data = 'http://localhost:8080/ords/grupo7/users/?q={"$orderby":{"id":"ASC"}}'
   $.getJSON(data, function (json) {
         
     // Ciclo for para cada item -> linha
     for (var item of json.items) {
-      appendToUserTable(item.id_user, item.username, item.account_status, item.default_ts, item.temporary_ts, item.last_login)
+      var ts = new Date(item.last_login)
+      tse.push(ts.toLocaleTimeString())
+      appendToUserTable(item.id_user, item.username, item.account_status, item.default_ts, item.temporary_ts, tse)
     }
+
   
   })
 
