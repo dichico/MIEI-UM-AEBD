@@ -16,19 +16,16 @@ function appendToTableSpaceTable (ID_TABLESPACE, NAME, BLOCK_SIZE, MAX_SIZE, STA
     table.appendChild(newRow)
   }
   
-  $(document).ready(function() {
-  var tse = Array()
+$(document).ready(function() {
     var data = 'http://localhost:8080/ords/grupo7/tablespace/?q={"$orderby":{"id":"ASC"}}'
     $.getJSON(data, function (json) {
           
       // Ciclo for para cada item -> linha
       for (var item of json.items) {
         var ts = new Date(item.timestamp)
-        tse.push(ts.toLocaleTimeString())
-        appendToTableSpaceTable(item.id, item.name, item.block_size, item.max_size, item.status, item.contents, tse)
+        appendToTableSpaceTable(item.id, item.name, item.block_size, item.max_size, item.status, item.contents, ts.toLocaleTimeString())
       }
     
     })
-  
     $('tablespaceTable').DataTable();
-  })
+})
