@@ -2,7 +2,7 @@
 // Function para adicionar as linhas da tabela
 function appendToUserTable (ID_USER, USERNAME, ACCOUNT_STATUS, DEFAULT_TS, TEMPORARY_TS, LAST_LOGIN) {
   
-  var table = document.getElementById('usertable');
+  var table = document.getElementById('userTable');
   var newRow = document.createElement('tr');
   newRow.innerHTML = `
     <th>${ID_USER}</th>
@@ -29,5 +29,5 @@ $(document).ready(function() {
   
   })
 
-  $('#userTable').DataTable();
+  $().DataTable();
 })

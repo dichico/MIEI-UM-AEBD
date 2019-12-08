@@ -27,5 +27,5 @@ $(document).ready(function() {
       }
     
     })
-    $('tablespaceTable').DataTable();
+    $().DataTable();
 })
