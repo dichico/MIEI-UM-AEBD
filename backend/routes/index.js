@@ -13,12 +13,13 @@ router.get("/", function(req, res, next) {
   connect("system", "oracle", "//localhost/orcl")
     .then(connection => {
       conn1 = connection;
-      conn1.execute("SELECT * FROM dba_users").then(result => {
-        //res.send(result.rows);
-        connect("hr", "oracle", "//localhost/orcl").then(connection2 => {
-          conn2 = connection2;
+      connect("hr", "oracle", "//localhost/orcl").then(connection2 => {
+        conn2 = connection2;
+        conn1.execute("SELECT * FROM dba_users").then(result1 => {
           conn2.execute("SELECT * FROM employees").then(result2 => {
-            res.send(result2.rows);
+            res.send(result1.rows);
+
+            //res.send(result.rows);
           });
         });
       });
