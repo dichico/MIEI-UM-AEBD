@@ -13,18 +13,39 @@ router.get("/", function(req, res, next) {
   connect("system", "oracle", "//localhost/orcl")
     .then(connection => {
       conn1 = connection;
-      connect("hr", "oracle", "//localhost/orcl").then(connection2 => {
+      connect("grupo7", "grupo7", "//localhost/orcl").then(connection2 => {
         conn2 = connection2;
-        conn1.execute("SELECT * FROM dba_users").then(result1 => {
-          conn2.execute("SELECT * FROM employees").then(result2 => {
-            res.send(result1.rows);
+        // aqui as duas conexões já estão criadas
+        
+        //fazer select na sys
+        conn1.execute("select user_id, username, account_status, default_tablespace, temporary_tablespace, last_login from dba_users").then(dados => {
+          
+         //fazer insert na grupo7 
+          dados.rows.forEach(dado =>{
+            //console.log(dado[5]);
+            var exp = "insert into users (id_user, username, account_status, default_ts, temporary_ts, last_login, timestamp, db_id) values (:id_user,:username,:ac_stat,:def_ts,:temp_ts,null,CURRENT_TIMESTAMP,1)"
+            conn2.execute(exp,[dado[0],dado[1],dado[2],dado[3],dado[4]],{ autoCommit: true}).then(dados2 => {
+             }).catch(err => {console.log(err)})
 
-            //res.send(result.rows);
-          });
-        });
-      });
+          })
+
+         
+          
+        }).catch(err =>{console.log(err)})
+      })
+
+    }).catch(err => {
+      console.log(err)
     })
+
+
+
+
+
+
+      
     .catch(err => {
+      console.log(err)
       res.render("error", { erro: err });
     });
 
