@@ -39,7 +39,7 @@
 
   <!-- Page level custom scripts -->
   <script src="js/graficos/tablespaceTable.js"></script>
-  <script src="js/graficos/tableSizeChart.js"></script>
+
 
 </head>
 
@@ -137,19 +137,43 @@
               <i class="fas fa-sync-alt fa-sm text-white-50"></i> Recarregar a página</a>
           </div>
 
+          <div class="row justify-content-center">
+              
+            <!-- Número de sessões -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-danger shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Número de tablespaces</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">
+                          <div id="NumUsers"></div>
+                          
+                          <script type="text/javascript">
+                            $(document).ready(function(){
+                              var test = 'http://localhost:8080/ords/grupo7/tablespaces/'
+                              $.getJSON(test, function (json) {
+                                $("#NumDatafiles").append(json.count)
+                              });
+                            });
+                            
+                          </script>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-file fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
            <!-- Gráfico de armazenamento Livre -->
            <div class="col-xl-8 col-lg-7"style="margin-left:200px" >
             <div class="card shadow mb-4">
-              <!-- Card Header - Dropdown -->
-              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary"></h6>
-              </div>
-              <!-- Card Body -->
-              <div class="card-body" >
-                <div class="chart-area" >
-                  <canvas id="tableSizeChart"></canvas>
-                </div>
-              </div>
+             
+  
             </div>
           </div>
 
