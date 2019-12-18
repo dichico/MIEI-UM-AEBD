@@ -54,6 +54,17 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CPU_PERC" id="AD6337F7-DF25-CAC1-5CBC-706739F4E2D8">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-18 16:53:17 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="CPU_COUNT" id="F55ADCF6-F85B-9588-3707-40172EB7038B">
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:23:39 UTC</createdTime>
