@@ -21,7 +21,7 @@
 <autoIncrementSequenceName>dbstatus_sq</autoIncrementSequenceName>
 <autoIncrementTriggerName>dbstatus_trg</autoIncrementTriggerName>
 </Column>
-<Column name="TOTAL_SIZE" id="4714E507-5559-31F6-2441-499B3D79E3EE">
+<Column name="TOTAL_SIZE_RAM" id="4714E507-5559-31F6-2441-499B3D79E3EE">
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:23:39 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
@@ -32,7 +32,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="FREE_SIZE" id="FF30314A-BCFD-FA49-0E3D-49B7230BC7B9">
+<Column name="FREE_SIZE_RAM" id="FF30314A-BCFD-FA49-0E3D-49B7230BC7B9">
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:23:39 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
@@ -43,7 +43,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="USED_SIZE" id="05A91C03-3D55-2F55-3296-46A4DE569A1C">
+<Column name="USED_SIZE_RAM" id="05A91C03-3D55-2F55-3296-46A4DE569A1C">
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:23:39 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
@@ -54,7 +54,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CPU_PERC" id="AD6337F7-DF25-CAC1-5CBC-706739F4E2D8">
+<Column name="TOTAL_USED_SIZE" id="AD6337F7-DF25-CAC1-5CBC-706739F4E2D8">
 <createdBy>cocos</createdBy>
 <createdTime>2019-12-18 16:53:17 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>

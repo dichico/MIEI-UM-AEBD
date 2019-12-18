@@ -148,26 +148,30 @@ router.get("/", function(req, res, next) {
                });
 
 
-              /*
-              conn1
-                .execute(
-                  "select file_name, tablespace_name, autoextensible, status, maxbytes, bytes from dba_data_files"
-                )
-                .then(dadosdtf => {
-                  dadosdtf.rows.forEach(dadodtf => {
-                    conn2.execute(
-                      "insert into datafile (name, auto_extensible, status, max_bytes, bytes, tablespace_id) values (:a,:b,:c,:d,:e, (select max(t.id) from tablespace t where t.name = :f))",
-                      [
-                        dadodtf[0],
-                        dadodtf[2],
-                        dadodtf[3],
-                        dadodtf[4],
-                        dadodtf[5],
-                        dadodtf[1]
-                      ]
-                    );
-                  });
-                });*/
+               conn1.execute("select round(sum(bytes)/1024/1024) from dba_data_files").then(total_size => {
+                conn3.execute("select count(*) from v$session where username is not null").then(sess_num => {
+                conn3.execute("select round(sum(bytes)/1024/1024) from V$SGASTAT where NAME like '%free memory%'").then(free_size => {
+                conn3.execute("select round(sum(value)/1024/1024) from V$SGA").then(tot_size => {                 
+                    conn3.execute("select cpu_count, cpu_core_count, cpu_socket_count from DBA_CPU_USAGE_STATISTICS where dbid = 776972821").then(cpus => {
+                      conn2.execute("insert into db_status (total_size_ram, free_size_ram, used_size_ram, total_used_size, cpu_count, cpu_core_count, cpu_socket_count, number_sessions, timestamp, db_id) values (:1,:2,:3,:4,:5,:6,:7,:8,CURRENT_TIMESTAMP,1)",
+                      [tot_size.rows[0][0],free_size.rows[0][0],(tot_size.rows[0][0] - free_size.rows[0][0]), total_size.rows[0][0], cpus.rows[0][0],cpus.rows[0][1],cpus.rows[0][2],sess_num.rows[0][0]],{
+                        autoCommit: true
+                      })
+                      
+                          
+                        })
+                      })
+                    })
+                  })
+               });
+
+
+
+
+
+
+            
+
             })
             .catch(err => {
               console.log(err);

@@ -10,7 +10,7 @@
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
 <columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
-<ColumnProxy name="USED_SIZE" id="05A91C03-3D55-2F55-3296-46A4DE569A1C">
+<ColumnProxy name="USED_SIZE_RAM" id="05A91C03-3D55-2F55-3296-46A4DE569A1C">
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:37:19 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
@@ -26,7 +26,7 @@
 <ownerDesignName>TRABALHO</ownerDesignName>
 <defaultValue>CURRENT_TIMESTAMP</defaultValue>
 </ColumnProxy>
-<ColumnProxy name="TOTAL_SIZE" id="4714E507-5559-31F6-2441-499B3D79E3EE">
+<ColumnProxy name="TOTAL_SIZE_RAM" id="4714E507-5559-31F6-2441-499B3D79E3EE">
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:37:19 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
@@ -36,7 +36,7 @@
 <createdTime>2019-11-29 14:37:19 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="CPU_PERC" id="AD6337F7-DF25-CAC1-5CBC-706739F4E2D8">
+<ColumnProxy name="TOTAL_USED_SIZE" id="AD6337F7-DF25-CAC1-5CBC-706739F4E2D8">
 <createdBy>cocos</createdBy>
 <createdTime>2019-12-18 16:53:17 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
@@ -61,7 +61,7 @@
 <createdTime>2019-11-29 14:37:19 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="FREE_SIZE" id="FF30314A-BCFD-FA49-0E3D-49B7230BC7B9">
+<ColumnProxy name="FREE_SIZE_RAM" id="FF30314A-BCFD-FA49-0E3D-49B7230BC7B9">
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:37:19 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
