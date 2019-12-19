@@ -26,6 +26,11 @@
 <ownerDesignName>TRABALHO</ownerDesignName>
 <defaultValue>CURRENT_TIMESTAMP</defaultValue>
 </ColumnProxy>
+<ColumnProxy name="TOTAL_USED_SIZE" id="29A1E722-CE53-86AD-A978-6AF51021A557">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-19 16:59:02 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+</ColumnProxy>
 <ColumnProxy name="TOTAL_SIZE_RAM" id="4714E507-5559-31F6-2441-499B3D79E3EE">
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:37:19 UTC</createdTime>
