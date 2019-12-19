@@ -13,24 +13,24 @@ $(document).ready(function () {
 
     for (i = 0; i < json.items.length; i++) {
       x.push(json.items[i].timestamp)
-      y.push(json.items[i].total_used_size)
+      y.push(json.items[i].used_size_ram)
       var ts = new Date(json.items[i].timestamp)
       tse.push(ts.toLocaleTimeString())
     }
 
     // Area Chart Example
-    var chart = document.getElementById("usedSizeChart");
-    var freeSizeChart = new Chart(chart, {
+    var chart = document.getElementById("ramTime");
+    var ramTime = new Chart(chart, {
       type: 'line',
       data: {
         labels: tse,
         datasets: [{
-          label: "Used Size",
-          lineTension: 0.3,
+          label: "Used RAM Size",
+          lineTension: 0.7,
           backgroundColor: "rgba(244, 234, 234)",
           borderColor: "rgba(191, 0, 0)",
           pointRadius: 5,
-          pointBackgroundColor: "rgba(191, 0, 0)",
+          pointBackgroundColor: "rgba(191, 0, 0, 1)",
           pointBorderColor: "rgba(255, 255, 255, 1)",
           pointHoverRadius: 3,
           pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",

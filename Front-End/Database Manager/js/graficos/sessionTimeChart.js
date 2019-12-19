@@ -26,9 +26,7 @@ $(document).ready(function() {
         labels: tse,
         datasets: [{
         label: "Number of Sessions",
-        backgroundColor: "#4e73df",
-        hoverBackgroundColor: "#2e59d9",
-        borderColor: "#4e73df",
+        backgroundColor: "rgba(191, 0, 0)",
         data: y,
         }],
     },

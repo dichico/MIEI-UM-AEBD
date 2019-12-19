@@ -1,5 +1,5 @@
 // Function para adicionar as linhas da tabela
-function appendToTableSpaceTable (ID_TABLESPACE, NAME, BLOCK_SIZE, MAX_SIZE, STATUS, CONTENTS, LAST_LOGIN) {
+function appendToTableSpaceTable (ID_TABLESPACE, NAME, BLOCK_SIZE, MAX_SIZE, STATUS, CONTENTS) {
   
     var table = document.getElementById('tablespaceTable');
     var newRow = document.createElement('tr');
@@ -10,7 +10,6 @@ function appendToTableSpaceTable (ID_TABLESPACE, NAME, BLOCK_SIZE, MAX_SIZE, STA
       <th>${MAX_SIZE}</th>
       <th>${STATUS}</th>
       <th>${CONTENTS}</th>
-      <th>${LAST_LOGIN}</th>
     `;
 
     table.appendChild(newRow)
@@ -23,7 +22,7 @@ $(document).ready(function() {
       // Ciclo for para cada item -> linha
       for (var item of json.items) {
         var ts = new Date(item.timestamp)
-        appendToTableSpaceTable(item.id, item.name, item.block_size, item.max_size, item.status, item.contents, ts.toLocaleTimeString())
+        appendToTableSpaceTable(item.id, item.name, item.block_size, item.max_size, item.status, item.contents)
       }
     
     })

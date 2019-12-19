@@ -1,5 +1,5 @@
 // Function para adicionar as linhas da tabela
-function appendToDataFileTable (ID_DATAFILE, NAME, AUTO_EXTENSIBLE, STATUS, MAX_BYTES, BYTES, LAST_LOGIN) {
+function appendToDataFileTable (ID_DATAFILE, NAME, AUTO_EXTENSIBLE, STATUS, MAX_BYTES, BYTES, NAME_TABLESPACE) {
   
     var table = document.getElementById('datafileTable');
     var newRow = document.createElement('tr');
@@ -10,7 +10,7 @@ function appendToDataFileTable (ID_DATAFILE, NAME, AUTO_EXTENSIBLE, STATUS, MAX_
       <th>${STATUS}</th>
       <th>${MAX_BYTES}</th>
       <th>${BYTES}</th>
-      <th>${LAST_LOGIN}</th>
+      <th>${NAME_TABLESPACE}</th>
     `;
 
     table.appendChild(newRow)
@@ -23,7 +23,7 @@ $(document).ready(function() {
       // Ciclo for para cada item -> linha
       for (var item of json.items) {
         var ts = new Date(item.timestamp)
-        appendToDataFileTable(item.id, item.name, item.auto_extensible, item.status, item.max_bytes, item.bytes, ts.toLocaleTimeString())
+        appendToDataFileTable(item.id, item.name, item.auto_extensible, item.status, item.max_bytes, item.bytes, 'TESTE')
       }
     
     })
