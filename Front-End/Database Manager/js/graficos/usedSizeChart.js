@@ -13,19 +13,19 @@ $(document).ready(function(){
     
     for(i=0; i<json.items.length; i++){
       x.push(json.items[i].timestamp)
-      y.push(json.items[i].free_size)
+      y.push(json.items[i].total_used_size)
       var ts = new Date(json.items[i].timestamp)
       tse.push(ts.toLocaleTimeString())
     }
 
   // Area Chart Example
-  var chart = document.getElementById("freeSizeChart");
+  var chart = document.getElementById("usedSizeChart");
   var freeSizeChart = new Chart(chart, {
     type: 'line',
     data: {
       labels: tse,
       datasets: [{
-        label: "Free Size",
+        label: "Used Size",
         lineTension: 0.3,
         backgroundColor: "rgba(78, 115, 223, 0.05)",
         borderColor: "rgba(78, 115, 223, 1)",
