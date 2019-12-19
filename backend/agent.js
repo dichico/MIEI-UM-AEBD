@@ -1,12 +1,12 @@
 var oracledb = require("oracledb");
 
+var conn1; // sys pdb
+var conn2; // grupo 7
+var conn3; // cdb
 
 
-var conn1;
-var conn2;
-var conn3;
 
-
+/* CRIAR CONEXÃO DEPENDENDO DE PARAMETROS */
 function connect(user, pass, cs) {
     return oracledb.getConnection({
       user: user,
@@ -17,32 +17,11 @@ function connect(user, pass, cs) {
 
 
 
-function connectandupdate(){
-    connect("system", "oracle", "//localhost/orcl")
-    .then(connection => {
-      conn1 = connection;
-      connect("grupo7", "grupo7", "//localhost/orcl")
-        .then(connection2 => {
-          conn2 = connection2;
-          connect("system", "oracle", "//localhost/orcl12c")
-            .then(connection3 => {
-              conn3 = connection3;
-              initialLoad();
-              
-              
-              setInterval(update, 30000);
-              
-            })
-        })
-    })
-}
-
-
+/* CARREGAMENTO INICIAL PARA RESOLVER DEPENDENCIAS, SÓ OCORRE NO INICIO */
 function initialLoad(){
     conn2.execute("select * from db").then(dados => {
-      console.log(dados.rows.length)
         if(dados.rows.length == 0){
-          console.log("nao tenho dados na db")
+
             conn1
                 .execute("select name,platform_name from v$database")
                 .then(dadosdb => {
@@ -97,7 +76,7 @@ function initialLoad(){
 }
 
 
-
+/* UPDATE DAS TABELAS */
 function update(){
     
               // aqui as duas conexões já estão criadas
@@ -196,10 +175,8 @@ function update(){
                   "select user_id, username, account_status, default_tablespace, temporary_tablespace, last_login from dba_users"
                 )
                 .then(dados => {
-                  //fazer insert na grupo7
                   dados.rows.forEach(user => {
-                    //update users set username = :unaaa, account_status = :asaa, default_ts = :daat, temporary_ts = :taaas, last_login = :llaaa, timestamp = CURRENT_TIMESTAMP where id_user = :iaaau",
-                   // [dado[1], dado[2], dado[3], dado[4], dado[5], dado[0]],
+                    console.log(user[5])
                     conn2.execute("update users set username = :unaaa, account_status = :asaa, default_ts = :daat, temporary_ts = :taaas, last_login = :llaaa, timestamp = CURRENT_TIMESTAMP where id_user = :iaaau",[user[1], user[2], user[3], user[4], user[5], user[0]], {
                       autoCommit: true
                     }).then(duser => {
@@ -215,9 +192,6 @@ function update(){
                 })
                 })
 
-               
-
-
                conn1.execute("select round(sum(bytes)/1024/1024) from dba_data_files").then(total_size => {
                 conn3.execute("select count(*) from v$session where username is not null").then(sess_num => {
                 conn3.execute("select round(sum(bytes)/1024/1024) from V$SGASTAT where NAME like '%free memory%'").then(free_size => {
@@ -227,8 +201,6 @@ function update(){
                       [tot_size.rows[0][0],free_size.rows[0][0],(tot_size.rows[0][0] - free_size.rows[0][0]), total_size.rows[0][0], cpus.rows[0][0],cpus.rows[0][1],cpus.rows[0][2],sess_num.rows[0][0]],{
                         autoCommit: true
                       })
-                      
-                          
                         })
                       })
                     })
@@ -237,4 +209,24 @@ function update(){
 
 }
 
-connectandupdate();
+/* CORRER AGENTE */
+
+function runAgent(){
+  connect("system", "oracle", "//localhost/orcl")
+  .then(connection => {
+    conn1 = connection;
+    connect("grupo7", "grupo7", "//localhost/orcl")
+      .then(connection2 => {
+        conn2 = connection2;
+        connect("system", "oracle", "//localhost/orcl12c")
+          .then(connection3 => {
+            conn3 = connection3;
+            initialLoad();
+            setInterval(update, 30000);
+            
+          })
+      })
+  })
+}
+
+runAgent();
