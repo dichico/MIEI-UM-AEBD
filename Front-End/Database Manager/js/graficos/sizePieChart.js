@@ -11,10 +11,10 @@ $(document).ready(function () {
 
   var test = 'http://localhost:8080/ords/grupo7/db_status/?q={"$orderby":{"id":"ASC"}}'
   $.getJSON(test, function (json) {
-
-    item = [json.items.length - 1]
-    x.push(json.items[item].free_size)
-    y.push(json.items[item].used_size)
+    
+    item = [json.items.length-1]
+      x.push(json.items[item].free_size_ram)
+      y.push(json.items[item].used_size_ram)
 
     // Pie Chart Example
     var ctx = document.getElementById("sizePieChart");
