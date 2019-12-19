@@ -71,7 +71,7 @@ $(document).ready(function () {
             },
             gridLines: {
               color: "rgb(234, 236, 244)",
-              zeroLineColor: "rgb(234, 236, 244)",
+              zeroLineColor: "rgb(244, 234, 234)",
               drawBorder: false,
               borderDash: [2],
               zeroLineBorderDash: [2]
