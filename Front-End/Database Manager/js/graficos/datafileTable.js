@@ -17,13 +17,13 @@ function appendToDataFileTable (ID_DATAFILE, NAME, AUTO_EXTENSIBLE, STATUS, MAX_
   }
   
 $(document).ready(function() {
-    var data = 'http://localhost:8080/ords/grupo7/datafile/?q={"$orderby":{"id":"ASC"}}'
+    var data = 'http://localhost:8080/ords/grupo7/personalizado/1'
     $.getJSON(data, function (json) {
           
       // Ciclo for para cada item -> linha
       for (var item of json.items) {
         var ts = new Date(item.timestamp)
-        appendToDataFileTable(item.id, item.name, item.auto_extensible, item.status, item.max_bytes, item.bytes, 'TESTE')
+        appendToDataFileTable(item.id, item.name, item.auto_extensible, item.status, item.max_bytes, item.bytes, item.tablespace_name)
       }
     
     })
