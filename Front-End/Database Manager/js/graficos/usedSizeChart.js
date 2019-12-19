@@ -27,8 +27,8 @@ $(document).ready(function () {
         datasets: [{
           label: "Used Size",
           lineTension: 0.3,
-          backgroundColor: "rgba(78, 115, 223, 0.05)",
-          borderColor: "rgba(78, 115, 223, 1)",
+          backgroundColor: "rgba(244, 234, 234)",
+          borderColor: "rgba(244, 234, 234)",
           pointRadius: 3,
           pointBackgroundColor: "rgba(78, 115, 223, 1)",
           pointBorderColor: "rgba(78, 115, 223, 1)",
@@ -71,7 +71,7 @@ $(document).ready(function () {
             },
             gridLines: {
               color: "rgb(234, 236, 244)",
-              zeroLineColor: "rgb(244, 234, 234)",
+              zeroLineColor: "rgb(234, 236, 244)",
               drawBorder: false,
               borderDash: [2],
               zeroLineBorderDash: [2]
