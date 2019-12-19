@@ -54,14 +54,14 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TOTAL_USED_SIZE" id="AD6337F7-DF25-CAC1-5CBC-706739F4E2D8">
+<Column name="TOTAL_USED_SIZE" id="29A1E722-CE53-86AD-A978-6AF51021A557">
 <createdBy>cocos</createdBy>
-<createdTime>2019-12-18 16:53:17 UTC</createdTime>
+<createdTime>2019-12-19 16:59:02 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT027</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
