@@ -27,16 +27,22 @@ function connectandupdate(){
           connect("system", "oracle", "//localhost/orcl12c")
             .then(connection3 => {
               conn3 = connection3;
+              initialLoad();
+              
+              
               setInterval(update, 30000);
+              
             })
         })
     })
 }
 
-/*
+
 function initialLoad(){
     conn2.execute("select * from db").then(dados => {
+      console.log(dados.rows.length)
         if(dados.rows.length == 0){
+          console.log("nao tenho dados na db")
             conn1
                 .execute("select name,platform_name from v$database")
                 .then(dadosdb => {
@@ -45,7 +51,7 @@ function initialLoad(){
                       "select version from dba_cpu_usage_statistics where dbid = 776972821"
                     )
                     .then(dadosversion => {
-                      
+                      console.log("vou inserir dados na db")
                             conn2.execute("insert into db (name,platform, db_version) values(:name,:platform, :version)",
                             [
                               dadosdb.rows[0][0],
@@ -55,19 +61,41 @@ function initialLoad(){
                             {
                               autoCommit: true
                             }).then(coisas => {
-                                conn2.execute("select * from tablespace").then(dadostbs => {
-                                    if(dados.rows.length == 0){
+                                conn2.execute("select * from tablespace").then(dadostbss => {
+                                    if(dadostbss.rows.length == 0){
+                                      console.log("nao tenho dados na tbs")
+                                      conn1
+                .execute(
+                  "SELECT TABLESPACE_NAME,BLOCK_SIZE,MAX_SIZE,STATUS,CONTENTS FROM DBA_TABLESPACES"
+                )
+                .then(dadostbs => {
+                  dadostbs.rows.forEach(table => {
+                    
+                        conn2.execute("insert into tablespace (name, block_size, max_size, status, contents, timestamp, db_id) values (:a,:b,:c,:d,:e,CURRENT_TIMESTAMP,1)",
+                        [
+                          table[0],
+                          table[1],
+                          table[2],
+                          table[3],
+                          table[4]
+                        ],
+                          {
+                            autoCommit: true
+                          }
+                        )})
                                         
-                                    }
+                                    
                                 })
-                            })
-                        })
+                              } 
+                        }) 
                     })
-                  
-        }
-    })
+
+                  })
+        })
+    }
+})
 }
-*/
+
 
 
 function update(){
