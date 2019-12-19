@@ -217,7 +217,7 @@ function runAgent() {
             .then(connection3 => {
               conn3 = connection3;
               initialLoad();
-              setInterval(update, 30000);
+              setInterval(update, 15000);
 
             })
         })
