@@ -11,7 +11,7 @@ $(document).ready(function() {
   var test = 'http://localhost:8080/ords/grupo7/db_status/?limit=500'
     $.getJSON(test, function(json) {
         
-        for(i = json.items.length-25; i<json.items.length; i++){
+        for(i = 0; i<json.items.length; i++){
             x.push(json.items[i].timestamp)
             y.push(json.items[i].number_sessions)
             var ts = new Date(json.items[i].timestamp)
