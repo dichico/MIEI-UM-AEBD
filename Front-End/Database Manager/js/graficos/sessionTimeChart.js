@@ -8,10 +8,10 @@ $(document).ready(function() {
     var y = Array()
     var tse = Array()
 
-    var test = 'http://localhost:8080/ords/grupo7/db_status/?q={"$orderby":{"id":"ASC"}}'
+  var test = 'http://localhost:8080/ords/grupo7/db_status/?limit=500'
     $.getJSON(test, function(json) {
         
-        for(i=0; i<json.items.length; i++){
+        for(i = json.items.length-25; i<json.items.length; i++){
             x.push(json.items[i].timestamp)
             y.push(json.items[i].number_sessions)
             var ts = new Date(json.items[i].timestamp)
@@ -72,24 +72,19 @@ $(document).ready(function() {
         display: false
         },
         tooltips: {
-        titleMarginBottom: 10,
-        titleFontColor: '#6e707e',
-        titleFontSize: 14,
-        backgroundColor: "rgb(255,255,255)",
-        bodyFontColor: "#858796",
-        borderColor: '#dddfeb',
-        borderWidth: 1,
-        xPadding: 15,
-        yPadding: 15,
-        displayColors: false,
-        caretPadding: 10,
-        callbacks: {
-            label: function(tooltipItem, chart) {
-            var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-            return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
-            }
+            titleMarginBottom: 10,
+            titleFontColor: '#6e707e',
+            titleFontSize: 14,
+            backgroundColor: "rgb(255,255,255)",
+            bodyFontColor: "#858796",
+            borderColor: '#dddfeb',
+            borderWidth: 1,
+            xPadding: 15,
+            yPadding: 15,
+            displayColors: false,
+            caretPadding: 10
         }
-        },
+        ,
     }
     });
     }

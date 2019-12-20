@@ -16,7 +16,7 @@ function appendToTableSpaceTable (ID_TABLESPACE, NAME, BLOCK_SIZE, MAX_SIZE, STA
   }
   
 $(document).ready(function() {
-    var data = 'http://localhost:8080/ords/grupo7/tablespace/?q={"$orderby":{"id":"ASC"}}'
+    var data = 'http://localhost:8080/ords/grupo7/tablespace/?limit=500'
     $.getJSON(data, function (json) {
           
       // Ciclo for para cada item -> linha

@@ -9,7 +9,7 @@ $(document).ready(function () {
   var x = Array()
   var y = Array()
 
-  var test = 'http://localhost:8080/ords/grupo7/db_status/?q={"$orderby":{"id":"ASC"}}'
+  var test = 'http://localhost:8080/ords/grupo7/db_status/'
   $.getJSON(test, function (json) {
     
     item = [json.items.length-1]

@@ -167,7 +167,7 @@ function update() {
 
   conn1
     .execute(
-      "select user_id, username, account_status, default_tablespace, temporary_tablespace, last_login from dba_users"
+      "select user_id, username, account_status, default_tablespace, temporary_tablespace, to_char(last_login, 'DD-MM-YYYY HH:MM:SS') from dba_users"
     )
     .then(dados => {
       dados.rows.forEach(user => {
