@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="AEBD - Database Manager">
   <meta name="author" content="Grupo 7">
-  <meta http-equiv="refresh" content="15"/>
 
   <title>Datafiles</title>
 
@@ -40,6 +39,7 @@
 
   <!-- Page level custom scripts -->
   <script src="js/graficos/datafileTable.js"></script>
+  <script src="js/graficos/usedDatafileChart.js"></script>
 
 </head>
 
@@ -167,31 +167,11 @@
                 </div>
               </div>
             </div>
-
-            <!-- Gráfico de armazenamento do datafile Usado -->
-            <div class="col-xl-8 col-lg-7">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Armazenamento Usado</h6>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="usedDataFileChart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
 
-          <div class="row justify-content-center">
+          
             
-            
-          </div>
-
-          <!-- DataTales Example -->
+          <!-- Tabela dos datafiles -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-danger">Tabela dos datafiles da DB</h6>
@@ -206,8 +186,6 @@
                       <th>NAME</th>
                       <th>AUTO_EXTENSIBLE</th>
                       <th>STATUS</th>
-                      <th>MAX_BYTES</th>
-                      <th>BYTES</th>
                       <th>TABLESPACE_NAME</th>
                     </tr>
                   </thead>
@@ -216,7 +194,37 @@
             </div>
           </div>
 
-        </div>
+          
+          <div class="row justify-content-center">
+            <div class="input-group col-sm-5">
+              <div class="input-group-prepend">
+                <button class="btn btn-danger" onclick="grafico()" type="button" id="button-addon1">Visualizar</button>
+              </div>
+              <input type="text" class="form-control" id="textDatafile" placeholder="Introduza o datafile a observar o armazenamento" aria-describedby="button-addon1">
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+
+            <!-- Gráfico de armazenamento do datafile Usado -->
+            <div class="col-xl-8 col-lg-7">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-danger" id="titulo"></h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="usedDatafileChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          
         <!-- /.container-fluid -->
 
       </div>
