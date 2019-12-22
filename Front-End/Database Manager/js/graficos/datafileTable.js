@@ -15,7 +15,7 @@ function appendToDataFileTable (ID_DATAFILE, NAME, AUTO_EXTENSIBLE, STATUS, NAME
   }
   
 $(document).ready(function() {
-    var data = 'http://localhost:8080/ords/grupo7/personalizado/1?limit=500'
+    var data = 'http://localhost:8080/ords/grupo7/personalizado/3'
     $.getJSON(data, function (json) {
           
       // Ciclo for para cada item -> linha
