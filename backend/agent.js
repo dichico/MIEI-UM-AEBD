@@ -132,12 +132,15 @@ function update() {
                 }
               );
             }
+          })
+          .catch(err => {
+            console.log(err);
           });
       });
     });
 
   //inserir dados na tabela datafile
-
+  //console.log("inserir na tabela datafiles");
   conn1
     .execute(
       "select file_name, tablespace_name, autoextensible, status from dba_data_files"
@@ -154,13 +157,20 @@ function update() {
           )
           .then(ddata => {
             if (ddata.rowsAffected == 0) {
-              conn2.execute(
-                "insert into datafile (name, auto_extensible, status, tablespace_id) values (:a,:b,:c,:d,:e, (select max(t.id) from tablespace t where t.name = :f))",
-                [data[0], data[2], data[3], data[1]],
-                {
-                  autoCommit: true
-                }
-              );
+              conn2
+                .execute(
+                  "insert into datafile (name, auto_extensible, status, tablespace_id) values (:a,:b,:c, (select max(t.id) from tablespace t where t.name = :f))",
+                  [data[0], data[2], data[3], data[1]],
+                  {
+                    autoCommit: true
+                  }
+                )
+                .then(result => {
+                  //console.log("insert datafile");
+                })
+                .catch(err => {
+                  console.log(err);
+                });
             }
           });
       });
@@ -211,6 +221,8 @@ function update() {
           });
       });
     });
+
+  //status
 
   conn1
     .execute("select round(sum(bytes)/1024/1024) from dba_data_files")
@@ -264,6 +276,7 @@ function runAgent() {
       connect("system", "oracle", "//localhost/orcl12c").then(connection3 => {
         conn3 = connection3;
         initialLoad();
+
         setInterval(update, 15000);
       });
     });
