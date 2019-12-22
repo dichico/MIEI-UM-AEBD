@@ -19,7 +19,7 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementSequenceName>datafiles_status_sq</autoIncrementSequenceName>
-<autoIncrementTriggerName>datafiles_id_trg</autoIncrementTriggerName>
+<autoIncrementTriggerName>datafiles_status_id_trg</autoIncrementTriggerName>
 </Column>
 <Column name="DATAFILE_ID" id="43E49008-C4A5-1FEA-CFD7-3AC56C9DA9DE">
 <createdBy>cocos</createdBy>
