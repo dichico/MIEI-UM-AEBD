@@ -56,6 +56,19 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="TIMESTAMP" id="33AF4815-ADBF-5429-3984-0576A067B10C">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-22 19:07:33 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="87A4A525-8E98-D0F9-0FED-772837D5DAA0" name="DATAFILE_STATUS_PK">

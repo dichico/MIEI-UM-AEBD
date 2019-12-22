@@ -15,6 +15,12 @@
 <createdTime>2019-12-22 18:52:06 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
 </ColumnProxy>
+<ColumnProxy name="TIMESTAMP" id="33AF4815-ADBF-5429-3984-0576A067B10C">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-22 19:07:33 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+</ColumnProxy>
 <ColumnProxy name="DATAFILE_ID" id="43E49008-C4A5-1FEA-CFD7-3AC56C9DA9DE">
 <createdBy>cocos</createdBy>
 <createdTime>2019-12-22 18:52:06 UTC</createdTime>
