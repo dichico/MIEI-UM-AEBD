@@ -65,6 +65,23 @@ function initialLoad() {
                         });
                     }
                   });
+                })
+                .then(() => {
+                  conn1
+                    .execute(
+                      "select file_name, tablespace_name, autoextensible, status from dba_data_files"
+                    )
+                    .then(dadosdtf => {
+                      dadosdtf.rows.forEach(data => {
+                        conn2.execute(
+                          "update datafile set auto_extensible = :auto_extensible, status = :status, timestamp = CURRENT_TIMESTAMP where name = :name",
+                          [data[2], data[3], data[0]],
+                          {
+                            autoCommit: true
+                          }
+                        );
+                      });
+                    });
                 });
             });
         });
