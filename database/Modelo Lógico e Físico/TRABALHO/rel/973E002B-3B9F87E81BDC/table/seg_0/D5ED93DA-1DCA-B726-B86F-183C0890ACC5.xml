@@ -57,27 +57,18 @@
 <ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MAX_BYTES" id="573A3913-91B0-0FE0-6276-37E2D906E612">
+<Column name="TABLESPACE_ID" id="884569F2-6B71-976F-6988-A65C19FB0894">
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:19:31 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT027</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="BYTES" id="4AF547E8-EB5C-C3AF-7FA7-ECFA6485688E">
-<createdBy>cocos</createdBy>
-<createdTime>2019-11-29 14:19:31 UTC</createdTime>
-<ownerDesignName>TRABALHO</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT027</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="264C0974-E240-C541-A934-3584F13CA69E" referredColumn="A0CE3FF0-8EE4-79DE-6CB7-73B401527EA8"/>
+</associations>
 </Column>
 <Column name="TIMESTAMP" id="D498F4B1-889C-4C64-5DD3-6176430976A2">
 <createdBy>cocos</createdBy>
@@ -91,19 +82,6 @@
 <defaultValue>CURRENT_TIMESTAMP</defaultValue>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TABLESPACE_ID" id="884569F2-6B71-976F-6988-A65C19FB0894">
-<createdBy>cocos</createdBy>
-<createdTime>2019-11-29 14:19:31 UTC</createdTime>
-<ownerDesignName>TRABALHO</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="264C0974-E240-C541-A934-3584F13CA69E" referredColumn="A0CE3FF0-8EE4-79DE-6CB7-73B401527EA8"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

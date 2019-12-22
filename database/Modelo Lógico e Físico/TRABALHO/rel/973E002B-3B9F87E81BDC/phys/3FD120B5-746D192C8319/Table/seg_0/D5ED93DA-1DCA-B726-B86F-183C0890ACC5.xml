@@ -20,16 +20,6 @@
 <createdTime>2019-11-29 14:37:19 UTC</createdTime>
 <ownerDesignName>TRABALHO</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="BYTES" id="4AF547E8-EB5C-C3AF-7FA7-ECFA6485688E">
-<createdBy>cocos</createdBy>
-<createdTime>2019-11-29 14:37:19 UTC</createdTime>
-<ownerDesignName>TRABALHO</ownerDesignName>
-</ColumnProxy>
-<ColumnProxy name="MAX_BYTES" id="573A3913-91B0-0FE0-6276-37E2D906E612">
-<createdBy>cocos</createdBy>
-<createdTime>2019-11-29 14:37:19 UTC</createdTime>
-<ownerDesignName>TRABALHO</ownerDesignName>
-</ColumnProxy>
 <ColumnProxy name="TABLESPACE_ID" id="884569F2-6B71-976F-6988-A65C19FB0894">
 <createdBy>cocos</createdBy>
 <createdTime>2019-11-29 14:37:19 UTC</createdTime>
