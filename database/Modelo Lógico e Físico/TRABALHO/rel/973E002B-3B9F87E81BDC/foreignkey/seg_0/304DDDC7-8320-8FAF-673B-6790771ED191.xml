@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="304DDDC7-8320-8FAF-673B-6790771ED191" containerWithKeyObject="B2DFB191-EE7D-C791-BACD-56ED013A0A94" localFKIndex="842BF4BF-874F-B24A-7DBB-813614075245" name="DATAFILE_STATUS_DATAFILE_FK">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-22 18:55:34 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<referredTableLongName>GRUPO7.DATAFILE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D5ED93DA-1DCA-B726-B86F-183C0890ACC5</referredTableID>
+<keyObject>6DC6CBDF-F668-6994-C247-06641C17E08C</keyObject>
+<referredKeyID>6DC6CBDF-F668-6994-C247-06641C17E08C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

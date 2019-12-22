@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2DFB191-EE7D-C791-BACD-56ED013A0A94" schemaObject="48F2135C-5498-A4BC-900E-3B9348737496" name="DATAFILE_STATUS">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-22 18:48:59 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B38C3550-8A3C-1421-EA43-19973E361CB6">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-22 18:52:06 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>datafiles_status_sq</autoIncrementSequenceName>
+<autoIncrementTriggerName>datafiles_id_trg</autoIncrementTriggerName>
+</Column>
+<Column name="DATAFILE_ID" id="43E49008-C4A5-1FEA-CFD7-3AC56C9DA9DE">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-22 18:52:06 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="304DDDC7-8320-8FAF-673B-6790771ED191" referredColumn="98B28E12-9651-C299-E236-5DFE435E4AF3"/>
+</associations>
+</Column>
+<Column name="MAX_BYTES" id="16CAE31B-C7C1-4EF5-3676-716B624647CB">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-22 18:52:06 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BYTES" id="4E94FEB2-0355-88B6-716E-514D562A9A4F">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-22 18:52:06 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="87A4A525-8E98-D0F9-0FED-772837D5DAA0" name="DATAFILE_STATUS_PK">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-22 18:52:06 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B38C3550-8A3C-1421-EA43-19973E361CB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="842BF4BF-874F-B24A-7DBB-813614075245" name="DATAFILE_STATUS_DATAFILE_FK">
+<createdBy>cocos</createdBy>
+<createdTime>2019-12-22 18:55:34 UTC</createdTime>
+<ownerDesignName>TRABALHO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43E49008-C4A5-1FEA-CFD7-3AC56C9DA9DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
