@@ -4,6 +4,33 @@
 --
 
 BEGIN
+
+    ORDS.ENABLE_SCHEMA(p_enabled => TRUE,
+                       p_schema => 'GRUPO7',
+                       p_url_mapping_type => 'BASE_PATH',
+                       p_url_mapping_pattern => 'grupo7',
+                       p_auto_rest_auth => FALSE);
+
+    commit;
+
+END;
+/
+
+BEGIN
+
+    ORDS.ENABLE_OBJECT(p_enabled => TRUE,
+                       p_schema => 'GRUPO7',
+                       p_object => 'DATAFILE_STATUS',
+                       p_object_type => 'TABLE',
+                       p_object_alias => 'datafile_status',
+                       p_auto_rest_auth => FALSE);
+
+    commit;
+
+END;
+/
+
+BEGIN
     ORDS.ENABLE_OBJECT(p_enabled => TRUE,
                        p_schema => 'GRUPO7',
                        p_object => 'DATAFILE',
