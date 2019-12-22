@@ -134,6 +134,25 @@ BEGIN
 'SELECT d.ID, d.NAME, d.AUTO_EXTENSIBLE, d.STATUS, d.MAX_BYTES, d.BYTES, t.NAME AS TABLESPACE_NAME FROM GRUPO7.DATAFILE d
 INNER JOIN tablespace t on d.tablespace_id = t.id'
       );
+  ORDS.DEFINE_TEMPLATE(
+      p_module_name    => 'personalizado',
+      p_pattern        => '2',
+      p_priority       => 0,
+      p_etag_type      => 'NONE',
+      p_etag_query     => NULL,
+      p_comments       => NULL);
+  ORDS.DEFINE_HANDLER(
+      p_module_name    => 'personalizado',
+      p_pattern        => '2',
+      p_method         => 'GET',
+      p_source_type    => 'json/collection',
+      p_items_per_page =>  100,
+      p_mimes_allowed  => '',
+      p_comments       => NULL,
+      p_source         => 
+'SELECT BYTES, TIMESTAMP FROM DATAFILE_STATUS
+    WHERE datafile_id = :datafile_id'
+      );
 
 
   COMMIT; 
